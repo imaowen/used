@@ -1,4 +1,4 @@
-package com.imao.common.utils;
+package com.imao.demo;
 
 import java.io.FileWriter;
 import java.io.PrintWriter;
