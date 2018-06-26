@@ -6,3 +6,29 @@ server:
         min-spare-threads: 30
     port: 8888
     context-path: /
+spring:
+    # 环境 dev|test|prd
+    profiles:
+        active: dev
+    application:
+        name: userdemo-application
+    # jackson时间格式化
+    jackson:
+        time-zone: GMT+8
+        date-format: yyyy-MM-dd HH:mm:ss
+    http:
+        multipart:
+            max-file-size: 100MB
+            max-request-size: 100MB
+            enabled: true
+    # 指定静态资源的路径
+    resources:
+        static-locations: classpath:/static/,classpath:/views/
+
+# Mybatis配置
+mybatis:
+    mapperLocations: classpath:mapper/**/*.xml
+    configLocation: classpath:mybatis.xml
+    
+    
+    

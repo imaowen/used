@@ -6,6 +6,8 @@ import java.util.regex.Pattern;
  * 字符串处理类
  */
 public class StringUtils {
+	
+	public static String CHARSET_UTF8 = "utf-8";
 
 	/*
 	 * 验证字符串是否为空
