@@ -1,4 +1,4 @@
-package com.imao.controller;
+package com.imao.modules.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
