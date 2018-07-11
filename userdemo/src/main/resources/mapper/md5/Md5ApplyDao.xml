@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.imao.modules.dao.Md5ApplyDao">
+
+	<insert id="save" parameterType="com.imao.modules.entity.Md5ApplyEntity" useGeneratedKeys="true" keyProperty="id">
+		insert into md5_${len}
+		(
+			`name`, 
+			`md5`
+		)
+		values
+		(
+			#{name}, 
+			#{md5}
+		)
+	</insert>
+	
+	<update id="insBatch" parameterType="string">
+		${sql}
+	</update>
+	
+</mapper>

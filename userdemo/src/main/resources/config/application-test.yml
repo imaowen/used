@@ -3,9 +3,9 @@ spring:
         type: com.alibaba.druid.pool.DruidDataSource
         driverClassName: com.mysql.jdbc.Driver
         druid:
-            url: jdbc:mysql://127.0.0.1:3306/test?useSSL=false&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+            url: jdbc:mysql://192.168.8.237:3306/lebocloud_ad?useSSL=false&allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
             username: root
-            password: sa
+            password: Hpplay.123
             initial-size: 10
             max-active: 100
             min-idle: 10
